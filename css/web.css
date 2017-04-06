@@ -1,0 +1,133 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family:arial;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style: none
+}
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+body,html{
+	height:100%;
+	width:100%;
+}
+#wrap{
+	height:100%;
+	width:100%;
+}
+#main-up{
+	height:30rem;
+	background-image:url('../img/main-up.jpg');
+	background-size:cover;
+}
+header{
+	width:100%;
+	padding:1rem;
+	position:fixed;
+	background-color:rgba(0,0,0,0);
+	z-index: 100;
+}
+.title{
+	float:left;
+	color:white;
+	font-size:3rem;
+	margin-left:3rem;
+}
+.nav{
+	line-height: 3rem;
+	float:right;
+	margin-right:3rem;
+}
+.nav>li{
+	float:left;
+	margin:0 1rem;
+}
+.nav>li>a{
+	color:white;
+	font-weight:bold;
+}
+.nav>li>a:hover{
+	display:block;
+	border-bottom:2px solid red;
+	transition: 0.25s;
+}
+section{
+	width:940px;
+	/*height:20rem;*/
+	position:absolute;
+	top:10rem;
+	left:50%;
+	transform:translateX(-50%);
+	background-color:white;
+	box-shadow: 0 1px 6px;
+}
+#basicInfo>.selfContent{
+padding:50px;
+
+}
+.selfContent>.selfImg{
+	float:left;
+}
+.selfContent>.selfImg>img{
+	width:300px;
+
+}
+.selfContent>.selfInfo{
+	float:left;
+	line-height: 40px;
+	margin-left:70px;
+}
+.selfContent>.selfInfo>.hello{
+	display:inline-block;
+	background-color:#E86767;
+	color:white;
+	font-size:12px;
+	line-height: 18px;
+	padding:0 5px;
+	position:relative;
+}
+.selfContent>.selfInfo>.hello:after{
+	display:block;
+	content:'';
+	height:0px;
+	line-height:0;
+	border-top:7px solid #E86767;
+	border-bottom:7px solid transparent;
+	/*border-left:7px solid white;*/
+	border-right:7px solid transparent;
+	position:absolute;
+	top:18px;
+	left:5px;
+}
+.selfContent>.selfInfo>h2{
+	border-bottom:1px solid #ddd;
+}
+
+
+#basicInfo>.selfLink{
+	background-color:#E86767;
+	padding:10px;
+}
+#basicInfo>.selfLink>ul{
+	display:flex;
+	justify-content: space-around;
+}
+#basicInfo>.selfLink>ul>li>a{
+	display:inline-block;
+	padding:7px;
+	border-radius:18px;
+}
+#basicInfo>.selfLink>ul>li>a>img{
+	width:22px;
+}
+#basicInfo>.selfLink>ul>li>a:hover{
+	background-color:#d15d5d;
+}
