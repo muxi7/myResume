@@ -23,11 +23,6 @@ body,html{
 	height:100%;
 	width:100%;
 }
-#main-up{
-	height:30rem;
-	background-image:url('../img/main-up.jpg');
-	background-size:cover;
-}
 header{
 	width:100%;
 	padding:1rem;
@@ -57,20 +52,28 @@ header{
 .nav>li>a:hover{
 	display:block;
 	border-bottom:2px solid red;
+	-webkit-transition:0.25;
 	transition: 0.25s;
 }
+#main-up{
+	height:30rem;
+	background-image:url('../img/main-up.jpg');
+	-webkit-background-size:cover;
+	background-size:cover;
+}
+
 section{
 	width:940px;
-	/*height:20rem;*/
 	position:absolute;
 	top:10rem;
 	left:50%;
+	-webkit-transform:translateX(-50%);
 	transform:translateX(-50%);
 	background-color:white;
 	box-shadow: 0 1px 6px;
 }
 #basicInfo>.selfContent{
-padding:50px;
+	padding:50px;
 
 }
 .selfContent>.selfImg{
@@ -101,7 +104,6 @@ padding:50px;
 	line-height:0;
 	border-top:7px solid #E86767;
 	border-bottom:7px solid transparent;
-	/*border-left:7px solid white;*/
 	border-right:7px solid transparent;
 	position:absolute;
 	top:18px;
@@ -117,7 +119,9 @@ padding:50px;
 	padding:10px;
 }
 #basicInfo>.selfLink>ul{
+	display:-webkit-flex;
 	display:flex;
+	-webkit-justify-content:space-around;
 	justify-content: space-around;
 }
 #basicInfo>.selfLink>ul>li>a{

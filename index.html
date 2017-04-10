@@ -13,20 +13,20 @@
 </head>
 <body>
 	<div id="wrap">
+		<header class="clearfix">
+			<div class="title">RESUME</div>
+			<ul class="nav classfix">
+				<li><a href="#basicInfo">个人信息</a></li>
+				<li><a href="#items">我的项目</a></li>
+				<li><a href="#works">我的小作品</a></li>
+				<li><a href="#skills">技能</a></li>
+			</ul>
+		</header>
 		<div id="main-up">
-			<header class="clearfix">
-				<div class="title">RESUME</div>
-				<ul class="nav classfix">
-					<li><a href="#">个人信息</a></li>
-					<li><a href="#">我的项目</a></li>
-					<li><a href="#">我的小作品</a></li>
-					<li><a href="#">技能</a></li>
-				</ul>
-			</header>
 			<section id="basicInfo">
 				<div class="selfContent clearfix">
 					<div class="selfImg">
-						<img src="./img/selfImg.JPG">
+						<img src="./img/selfImg.jpg">
 					</div>
 					<div class="selfInfo">
 						<div class="hello">HELLO</div>
@@ -62,76 +62,84 @@
 			</section>
 
 			<section id="items" class="clearfix" style="display:none">
-			
 				<h1>我的项目</h1>
 				<div class="item-1">
 					<div class="public">
 						<img src="./img/music.jpg">
 						<div class="cover">
 							<h3>my music player</h3>
+							<p class="intor">这是一个音乐播放器，它使用了html5+css3,jquery,这是一个音乐播放器，它使用了html5+css3,jquery</p>
 							<div class="btn">
-								<a href="#">预览</a>
-								<a href="#">代码</a>
+								<a href="#" title="预览"><img src="./img/iconfont/view.png"></a>
+								<a href="#" title="源码链接"><img src="./img/iconfont/link.png"></a>
 							</div>
 						</div>
 					</div>
-					<div class="introduceDown">这是一个音乐播放器，它使用了html5+css3,jquery,这是一个音乐播放器，它使用了html5+css3,jquery</div>
 				</div>
 				<div class="item-2">
 					<div class="public">
 						<img src="./img/item-1.jpg">
 						<div class="cover">
-							<h3>my music player</h3>
+							<h3>仿2048小游戏</h3>
+							<p class="intor">这是一个经典游戏，仿2048，使用jquery制作</p>
 							<div class="btn">
-								<a href="#">预览</a>
-								<a href="#">代码</a>
+								<a href="#" title="预览"><img src="./img/iconfont/view.png"></a>
+								<a href="#" title="源码链接"><img src="./img/iconfont/link.png"></a>
 							</div>
 						</div>
 					</div>					
-					<div class="introduceUp">
-						这是一个经典游戏，仿2048，使用jquery制作
-					</div>
 				</div>
 				<div class="item-3">
-
 					<div class="public">
 						<img src="./img/item-3.jpg">
 						<div class="cover">
-							<h3>my music player</h3>
+							<h3>list todos</h3>
+							<p class="intor">这是使用Vue.js制作的一个list todos小应用，</p>
 							<div class="btn">
-								<a href="#">预览</a>
-								<a href="#">代码</a>
+								<a href="#" title="预览"><img src="./img/iconfont/view.png"></a>
+								<a href="#" title="源码链接"><img src="./img/iconfont/link.png"></a>
 							</div>
 						</div>
 					</div>
-					<div class="introduceDown">
-						这是一个音乐播放器，它使用了html5+css3,jquery,
-					</div>
 				</div>
-				<div class="item-4">
+			</section>
 
-					<div class="public">
-						<img src="./img/music.jpg">
-						<div class="cover">
-							<h3>my music player</h3>
-							<div class="btn">
-								<a href="#">预览</a>
-								<a href="#">代码</a>
-							</div>
-						</div>
-					</div>
-					<div class="introduceDown">
-						这是一个音乐播放器，它使用了html5+css3,jquery,
-					</div>
-				</div>
-			
+			<section id="works" style="display:none">
+				<h1>个人小作品</h1>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
 			</section>
-			<section id="showreel">
-				<!-- <h1>个人小作品</h1> -->
+
+			<section id="skills" style="display:none">
+				<h1>我的技能</h1>
+				<ul>
+					<li>
+						<h2>HTML / CSS</h2>
+						<p>熟悉HTML(5)/CSS(3)，掌握常见的CSS的核心概念，如：盒模型、浮动、定位、BFC等；掌握常见的布局方式，对CSS的兼容有一定的了解，对前端的规范化和语义化有一定的认识，能熟练地开发符合W3C标准的常见页面；</p>
+						<p>熟悉 Less / Sass / Autoprefixer 等CSS预处理和后处理方法、工具</p>
+					</li>
+					<li>
+						<h2>JavaSript</h2>
+						<p>熟悉原生Javascript，掌握事件模型，DOM操作，Ajax，JSONP，跨域，闭包，原型链，继承等相关概念的原理及使用方法，能使用原生JS封装函数库，实现诸如轮播，Tab切换卡，懒加载，Dialog，表单验证，Ajax等常见应用；</p>
+						<p>熟练jQuery的使用，能使用jQuery开发常见的页面效果，能够将常见效果封装成jQuery插件</p>
+						<p>了解 RequireJS 的使用</p>
+					</li>
+					<li>
+						<h2>其他</h2>
+						<p>熟悉Sumblime、HBuilder、git、Photoshop切图等相关开发工具的使用</p>
+						<p>对前端工程化、模块化有一定的认识，能够使用RequireJS实现模块化开发，能够使用NPM、gulp实现自动化流程</p>
+						<p>了解前端安全、性能优化方面的一些知识</p>
+						<p>熟悉互联网产品流程，前端开发流程，前后端协同开发流程</p>
+					</li>
+				</ul>
 			</section>
-			<section id="skills"></section>
 		</div>
-		<div id="main-down"></div>
 	</div>
 	<script type="text/javascript" src="./js/main.js"></script>
 </body>
