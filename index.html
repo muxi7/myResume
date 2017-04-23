@@ -5,9 +5,10 @@
 	<title>个人简历</title>
 	<meta name="" content="">
 	<meta name="" content="">
-	<link rel="stylesheet" type="text/css" href="./css/web.css">
+	<link rel="stylesheet" type="text/css" href="./css/baseInfo.css">
+	<link rel="stylesheet" type="text/css" href="./css/public.css">
 	<link rel="stylesheet" type="text/css" href="./css/items.css">
-	<!-- <link rel="stylesheet" type="text/css" href="./css/mobile.css"> -->
+
 	<script type="text/javascript" src="./js/jquery-2.1.0.js"></script>
 	
 </head>
@@ -30,11 +31,11 @@
 					</div>
 					<div class="selfInfo">
 						<div class="hello">HELLO</div>
-						<h2>个人信息</h2>
+						<h1>个人信息</h1>
 						<p>姓名： 左伟</p>
 						<p>年龄： 27</p>
 						<p>意向职位： 前端工程师</p>
-						<p>学历专业： 专科/应用电子</p>
+						<p>学历专业： 专科 / 应用电子</p>
 						<p>目标城市： 深圳</p>
 						<p>联系电话： 13076981857</p>
 					</div>
@@ -42,19 +43,20 @@
 				<div class="selfLink">
 					<ul>
 						<li>
-							<a href="#"><img src="./img/iconfont/email.png"></a>
+							<a href="mailto:da.zuo507@gmail.com" target="_block" title="E-mail：1660097606@qq.com"><img src="./img/iconfont/email.png"></a>
 						</li>
 						<li>
-							<a href="#"><img src="./img/iconfont/blog.png"></a>
+							<a href="http://www.jianshu.com/u/59d222fcd2ff" target="_block" title="blog"><img src="./img/iconfont/blog.png"></a>
 						</li>
 						<li>
-							<a href="https://github.com/muxi7"><img src="./img/iconfont/github.png"></a>
+							<a href="https://github.com/muxi7"  target="_block" title="github"><img src="./img/iconfont/github.png"></a>
 						</li>
-						<li>
-							
+						<li class="chat">
+							<img src="" style="display:none">
 							<a href="#" title="z1360097606"><img src="./img/iconfont/weChat.png"></a>
 						</li>
-						<li>
+						<li class="qq">
+							<img src="" style="display:none">
 							<a href="#" title="1360097606"><img src="./img/iconfont/qq.png"></a>
 						</li>
 					</ul>
@@ -63,57 +65,103 @@
 
 			<section id="items" class="clearfix" style="display:none">
 				<h1>我的项目</h1>
-				<div class="item-1">
-					<div class="public">
+				<ul class="clearfix">
+					<li class="box-3">
 						<img src="./img/music.jpg">
-						<div class="cover">
+						<div class="coverLayer">
 							<h3>my music player</h3>
-							<p class="intor">这是一个音乐播放器，它使用了html5+css3,jquery,这是一个音乐播放器，它使用了html5+css3,jquery</p>
+							<p class="intro">这是一个音乐播放器，它使用了html5+css3,jquery,这是一个音乐播放器，它使用了html5+css3,jquery</p>
 							<div class="btn">
-								<a href="#" title="预览"><img src="./img/iconfont/view.png"></a>
-								<a href="#" title="源码链接"><img src="./img/iconfont/link.png"></a>
+								<a href="http://muxi7.github.io/works/myPlayer/index.html" target="_block" title="预览"><img src="./img/iconfont/view.png"></a>
+								<a href="https://github.com/muxi7/works/tree/master/myPlayer" target="_block" title="源码链接"><img src="./img/iconfont/link.png"></a>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="item-2">
-					<div class="public">
-						<img src="./img/item-1.jpg">
-						<div class="cover">
+					</li>
+					<li class="box-1">
+						<img src="./img/2048.png">
+						<div class="coverLayer">
 							<h3>仿2048小游戏</h3>
-							<p class="intor">这是一个经典游戏，仿2048，使用jquery制作</p>
+							<p class="intro">这是一个经典游戏，仿2048，使用jquery制作</p>
 							<div class="btn">
-								<a href="#" title="预览"><img src="./img/iconfont/view.png"></a>
-								<a href="#" title="源码链接"><img src="./img/iconfont/link.png"></a>
+								<a href="http://muxi7.github.io/works/2048/index.html" target="_block" title="预览"><img src="./img/iconfont/view.png"></a>
+								<a href="https://github.com/muxi7/works/tree/master/2048" target="_block" title="源码链接"><img src="./img/iconfont/link.png"></a>
 							</div>
 						</div>
-					</div>					
-				</div>
-				<div class="item-3">
-					<div class="public">
+					</li>
+					<li class="box-1">
 						<img src="./img/item-3.jpg">
-						<div class="cover">
-							<h3>list todos</h3>
-							<p class="intor">这是使用Vue.js制作的一个list todos小应用，</p>
+						<div class="coverLayer">
+							<h3>todos list</h3>
+							<p class="intro">这是使用Vue.js制作的一个todos list小应用，</p>
 							<div class="btn">
 								<a href="#" title="预览"><img src="./img/iconfont/view.png"></a>
 								<a href="#" title="源码链接"><img src="./img/iconfont/link.png"></a>
 							</div>
 						</div>
-					</div>
-				</div>
+					</li>
+					<li></li>
+				</ul>
 			</section>
 
 			<section id="works" style="display:none">
 				<h1>个人小作品</h1>
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+				<ul class="clearfix">
+					<li class="box-3">
+						<img src="./img/music.jpg">
+						<div class="coverLayer">
+							<h3>插件1</h3>
+							<p class="intro">这是一个简洁的轮播插件，使用原生JS编写</p>
+							<div class="btn">
+								<a href="#" title="预览"><img src="./img/iconfont/view.png"></a>
+								<a href="#" title="源码链接"><img src="./img/iconfont/link.png"></a>
+							</div>
+						</div>
+					</li>
+					<li class="box-1">
+						<img src="./img/music.jpg">
+						<div class="coverLayer">
+							<h3>插件2</h3>
+							<p class="intro">这是一个简洁的轮播插件，使用原生JS编写</p>
+							<div class="btn">
+								<a href="#" title="预览"><img src="./img/iconfont/view.png"></a>
+								<a href="#" title="源码链接"><img src="./img/iconfont/link.png"></a>
+							</div>
+						</div>
+					</li>
+					<li class="box-1">
+						<img src="./img/music.jpg">
+						<div class="coverLayer">
+							<h3>插件3</h3>
+							<p class="intro">这是一个简洁的轮播插件，使用原生JS编写</p>
+							<div class="btn">
+								<a href="#" title="预览"><img src="./img/iconfont/view.png"></a>
+								<a href="#" title="源码链接"><img src="./img/iconfont/link.png"></a>
+							</div>
+						</div>
+					</li>
+					<li class="box-1">
+						<img src="./img/music.jpg">
+						<div class="coverLayer">
+							<h3>插件4</h3>
+							<p class="intro">这是一个简洁的轮播插件，使用原生JS编写</p>
+							<div class="btn">
+								<a href="#" title="预览"><img src="./img/iconfont/view.png"></a>
+								<a href="#" title="源码链接"><img src="./img/iconfont/link.png"></a>
+							</div>
+						</div>
+					</li>
+					<li class="box-2">
+						<img src="./img/music.jpg">
+						<div class="coverLayer">
+							<h3>插件5</h3>
+							<p class="intro">这是一个简洁的轮播插件，使用原生JS编写</p>
+							<div class="btn">
+								<a href="#" title="预览"><img src="./img/iconfont/view.png"></a>
+								<a href="#" title="源码链接"><img src="./img/iconfont/link.png"></a>
+							</div>
+						</div>
+					</li>
+				</ul>	
 			</section>
 
 			<section id="skills" style="display:none">

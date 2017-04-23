@@ -1,0 +1,88 @@
+.box-1{
+	width:32%;
+	height:250px;	
+}
+
+.box-2{
+	width:64%;
+	height:250px;
+}
+
+.box-3{
+	width:64%;
+	height:515px;
+}
+.box-1,.box-2,.box-3{
+	position:relative;
+	box-shadow: 0 0 7px;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+.box-1>img,.box-2>img,.box-3>img{
+	display:inline-block;
+	width:100%;
+	height:100%;
+	border-radius:5px;
+	position:relative;
+}
+
+.coverLayer{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.2);
+	overflow: hidden;
+	border-radius:5px;
+}
+.coverLayer>h3{
+	position:absolute;
+	left:20px;
+	bottom:15px;
+	color:white;
+	font-size:1.5em;
+	
+}
+.coverLayer>.btn{
+	position:absolute;
+	left:20px;
+	bottom:-40px;
+}
+.coverLayer>.btn>a{
+	display:inline-block;
+	padding:0 10px;
+	border:1px solid white;
+}
+.coverLayer>.btn>a:hover{
+	background-color:rgba(255,255,255,0.25);
+}
+.coverLayer>.btn>a>img{
+	width:22px;
+}
+
+.coverLayer>.intro{
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translateX(-50%) translateY(-50%);
+	transform:translateX(-50%) translateY(-50%);
+	border: 1px dashed #eee;
+	padding:5px;
+	line-height: 20px;
+	width:70%;
+	color:white;
+}
+.coverLayer>.intro:after{
+	position:absolute;
+	bottom:-2em;
+	left:20px;
+	display:inline-block;
+	content:'';
+	height:0px;
+	line-height:0;
+	border-top:16px solid rgba(255,255,255,1.0);
+	border-bottom:16px solid transparent;
+	border-right:16px solid transparent;
+}
